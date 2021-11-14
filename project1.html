@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Project - FreeCell Solitaire</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -85,10 +85,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
+          <h2>Project Details</h2>
           <ol>
+            <li>Project Details</li>
             <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
+            <li><a href="project2.html">Next Project</a></li>
           </ol>
         </div>
 
@@ -101,16 +102,16 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-7">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+              <div class="swiper-wrapper"> <!-- Align-items-center was original-->
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/portfolio/FreeCellGame.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/portfolio/FreeCellSA.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
@@ -122,21 +123,30 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-5">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Project</strong>: FreeCell Solitaire</li>
+                <li><strong>Category</strong>: Data Structures and Algorithms | Stacks</li>
+                <li><strong>Language/Libraries/APIs</strong>: C#</li>
+                <li><strong>Project date</strong>: 14 September, 2021</li>
+                <li><strong>Project URL</strong>: <a href="#">Get the .exe file to work to demo</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>Description</h2>
+              <ul>
+                <li>Developed a program that simulated the game of FreeCell Solitaire</li>
+                <li>Used GitHub for Source Control and Visual Studio for development and debugging</li>
+                <li>Used a 2D array of Stacks holding Card objects</li>
+                <li>Ability to choose from a large set of initial card orderings, and to replay these games. These
+                  games do not necessarily all need to be winnable</li>
+                <li>Ability to move sequences of cards using empty free cells and tableau cells</li>
+                <li>Ability to move all eligible cards to home cells</li>
+                <li>Notification of attempts to make illegal moves and winning the the game (no notification of a
+                  lost game)</li>
+              </ul>
             </div>
           </div>
 

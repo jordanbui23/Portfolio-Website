@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Jordan Bui's Resume</title>
+  <title>Project - Map Viewer</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -81,25 +81,90 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>My Resume</h2>
+          <h2>Project Details</h2>
           <ol>
+            <li>Project Details</li>
             <li><a href="index.html">Home</a></li>
-            <li>My Resume</li>
+            <li><a href="project3.html">Next Project</a></li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-        <embed src="assets/pdfs/Resume.pdf" alt="My Resume" style="min-height:100vh;width:100%">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project</strong>: Map Viewer</li>
+                <li><strong>Category</strong>: Data Structures and Algorithms | Quad Trees</li>
+                <li><strong>Language/Libraries/APIs</strong>: C#</li>
+                <li><strong>Project date</strong>: 26 October, 2021</li>
+                <li><strong>Project URL</strong>: <a href="#">Get the .exe file to work to demo</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Description</h2>
+              <ul>
+                <li>Developed a program that created a map from a .csv file containing floating point numbers that give the:
+                  <ol>
+                    <li>The (floating-point) x-coordinate of one end of the line segment.</li>
+                    <li>The (floating-point) y-coordinate of this end of the line segment.</li>
+                    <li>The (floating-point) x-coordinate of the other end of the line segment.</li>
+                    <li>The (floating-point) y-coordinate of this end of the line segment.</li>
+                    <li>An integer giving the color of the line segment in ARGB format.</li>
+                    <li>A floating-point number giving the line width in pixels.</li>
+                    <li>An integer giving the lowest zoom level at which this segment should be shown.</li>
+                  </ol>
+                  </li>
+                <li>Used GitHub for Source Control and Visual Studio for development and debugging</li>
+                <li>The data structure uses for storing the map data is known as a quad tree. The root of the
+                  quad tree represents the entire map.The map is divided into four equal-sized quadrants by
+                  splitting in half vertically, then splitting these halves in half horizontally. The root node then has
+                  four children - one for each of these quadrants. These nodes each have four children, and so on,
+                  until the map is described at the finest detail needed.
+                  </li>
+                <li>The zoom levels range from a minimum (1) that can display several towns at once, to a maximum (7) capable of detailing the
+                  lanes in a parking lot. </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section>
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
